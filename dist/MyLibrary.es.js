@@ -1,21 +1,34 @@
-import { ref as c, openBlock as l, createElementBlock as r, toDisplayString as s } from "vue";
-const a = (e, o) => {
-  const t = e.__vccOpts || e;
-  for (const [n, _] of o)
-    t[n] = _;
-  return t;
-}, p = {
+import { ref as c, openBlock as s, createElementBlock as a, toDisplayString as l } from "vue";
+const r = (e, t) => {
+  const o = e.__vccOpts || e;
+  for (const [n, _] of t)
+    o[n] = _;
+  return o;
+}, u = {
   __name: "HelloWorld",
   setup(e) {
-    const o = c(0), t = () => {
-      o.value++;
+    const t = c(0), o = () => {
+      t.value++;
     };
-    return (n, _) => (l(), r("button", {
+    return (n, _) => (s(), a("button", {
       type: "button",
-      onClick: t
-    }, "count is " + s(o.value), 1));
+      onClick: o
+    }, "count is " + l(t.value), 1));
   }
-}, d = /* @__PURE__ */ a(p, [["__scopeId", "data-v-4a27bb39"]]);
+}, v = /* @__PURE__ */ r(u, [["__scopeId", "data-v-4a27bb39"]]);
+const p = {
+  __name: "I18nImg",
+  setup(e) {
+    const t = c(0), o = () => {
+      t.value++;
+    };
+    return (n, _) => (s(), a("button", {
+      type: "button",
+      onClick: o
+    }, "count is " + l(t.value), 1));
+  }
+}, i = /* @__PURE__ */ r(p, [["__scopeId", "data-v-f11880d5"]]);
 export {
-  d as HelloWord
+  v as HelloWorld,
+  i as I18nImg
 };
